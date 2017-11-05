@@ -25,11 +25,6 @@ Desde el source
     $ cd fpt-cli
     $ python setup.py install
 
-Nota:
-^^^^^
-
-Python 3 solamente.
-
 Debería correr en Linux, Mac OS X, NetBSD, FreeBSD y Windows.
 
 Cómo se usa?
