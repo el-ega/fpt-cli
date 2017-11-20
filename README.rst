@@ -21,7 +21,7 @@ Desde el source
 
 .. code:: bash
 
-    $ git clone https://github.com/fenics/fpt-cli.git
+    $ git clone https://github.com/el-ega/fpt-cli.git
     $ cd fpt-cli
     $ python setup.py install
 
