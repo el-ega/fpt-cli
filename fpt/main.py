@@ -22,7 +22,7 @@ def show_relegation():
         team_str = ("{pos:<3} {row.team:<25} {row.pts:>5} "
                     "{row.p:>3} {row.average:>10}").format(pos=i, row=r)
         color = 'blue'
-        if (total - 4) <= i <= total:
+        if (total - 4) < i <= total:
             # 4 last
             color = 'red'
         click.secho(team_str, fg=color)
