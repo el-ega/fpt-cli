@@ -10,6 +10,7 @@ from setuptools import find_packages, setup
 NAME = 'fpt-cli'
 DESCRIPTION = ('Estadísticas de la primera división del fútbol argentino '
                'por línea de comandos.')
+KEYWORDS = ['fútbol', 'argentina', 'resultados', 'estadísticas']
 URL = 'https://github.com/el-ega/fpt-cli'
 EMAIL = 'mbordese@gmail.com'
 AUTHOR = 'Matias Bordese'
@@ -38,6 +39,7 @@ setup(
     version=about['__version__'],
     description=DESCRIPTION,
     long_description=long_description,
+    keywords=KEYWORDS,
     author=AUTHOR,
     author_email=EMAIL,
     url=URL,
@@ -56,4 +58,5 @@ setup(
         'Programming Language :: Python :: 3',
         'Topic :: Utilities',
     ],
+    zip_safe=False,
 )
