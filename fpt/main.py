@@ -46,10 +46,10 @@ def show_standings():
                     "{row.p:>3} {row.w:>3} {row.d:>3} {row.l:>3} "
                     "{row.f:>3} {row.a:>3} {row.gd:>3}").format(pos=i, row=r)
         color = 'blue'
-        if i <= 5:
+        if i <= 4:
             # libertadores
             color = 'green'
-        elif 5 < i <= 11:
+        elif 4 < i <= 9:
             # sudamericana
             color = 'yellow'
         click.secho(team_str, fg=color)

@@ -97,10 +97,9 @@ class RelegationRow(demiurge.Item):
 
     before1 = demiurge.TextField(selector='td.hidden-xs:eq(0)')
     before2 = demiurge.TextField(selector='td.hidden-xs:eq(1)')
-    before3 = demiurge.TextField(selector='td.hidden-xs:eq(2)')
     current = demiurge.TextField(selector='td.puntosactual')
 
-    pts = demiurge.TextField(selector='td.puntosdescenso')
+    pts = demiurge.TextField(selector='td.hidden-xs:eq(3)')
     p = demiurge.TextField(selector='td.jugadosdescenso')
 
     class Meta:
