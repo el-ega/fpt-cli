@@ -69,13 +69,13 @@ class Round(demiurge.Item):
 class StandingsRow(demiurge.Item):
     team = demiurge.TextField(selector='td.team')
     pts = demiurge.TextField(selector='td.puntos')
-    p = demiurge.TextField(selector='td.hidden-xs:eq(0)')
-    w = demiurge.TextField(selector='td.hidden-xs:eq(1)')
-    d = demiurge.TextField(selector='td.hidden-xs:eq(2)')
-    l = demiurge.TextField(selector='td.hidden-xs:eq(3)')
-    f = demiurge.TextField(selector='td.hidden-xs:eq(4)')
-    a = demiurge.TextField(selector='td.hidden-xs:eq(5)')
-    gd = demiurge.TextField(selector='td.hidden-xs:eq(6)')
+    p = demiurge.TextField(selector='td.d-none:eq(0)')
+    w = demiurge.TextField(selector='td.d-none:eq(1)')
+    d = demiurge.TextField(selector='td.d-none:eq(2)')
+    l = demiurge.TextField(selector='td.d-none:eq(3)')
+    f = demiurge.TextField(selector='td.d-none:eq(4)')
+    a = demiurge.TextField(selector='td.d-none:eq(5)')
+    gd = demiurge.TextField(selector='td.d-none:eq(6)')
 
     class Meta:
         selector = 'tr.linea'
@@ -95,9 +95,9 @@ class RelegationRow(demiurge.Item):
     team = demiurge.TextField(selector='td.team')
     average = demiurge.TextField(selector='td.promediodescenso')
 
-    before1 = demiurge.TextField(selector='td.hidden-xs:eq(0)')
-    before2 = demiurge.TextField(selector='td.hidden-xs:eq(1)')
-    before3 = demiurge.TextField(selector='td.hidden-xs:eq(2)')
+    before1 = demiurge.TextField(selector='td.d-none:eq(0)')
+    before2 = demiurge.TextField(selector='td.d-none:eq(1)')
+    before3 = demiurge.TextField(selector='td.d-none:eq(2)')
     current = demiurge.TextField(selector='td.puntosactual')
 
     pts = demiurge.TextField(selector='td.puntosdescenso')
