@@ -22,8 +22,8 @@ def show_relegation():
         team_str = ("{pos:<3} {row.team:<25} {row.pts:>5} "
                     "{row.p:>3} {row.average:>10}").format(pos=i, row=r)
         color = 'blue'
-        if (total - 4) < i <= total:
-            # 4 last
+        if (total - 1) < i <= total:
+            # last one
             color = 'red'
         click.secho(team_str, fg=color)
     click.echo()
@@ -46,16 +46,19 @@ def show_standings():
                     "{row.p:>3} {row.w:>3} {row.d:>3} {row.l:>3} "
                     "{row.f:>3} {row.a:>3} {row.gd:>3}").format(pos=i, row=r)
         color = 'blue'
-        if i <= 5:
+        if i <= 3:
             # libertadores
             color = 'green'
-        elif 5 < i <= 11:
+        elif 3 < i <= 9:
             # sudamericana
             color = 'yellow'
+        elif i == 28:
+            color = 'red'
         click.secho(team_str, fg=color)
     click.echo()
     click.secho('En zona de clasificación a Copa Libertadores', fg='green')
     click.secho('En zona de clasificación a Copa Sudamericana', fg='yellow')
+    click.secho('En zona de descenso', fg='red')
 
 
 def _show_matches(matches, enum=False):
